@@ -1,0 +1,121 @@
+/* متغيرات الالوان   */
+
+
+:root {
+    --main-color: #10cab7;
+    --secandary-color: #2c4755;
+    --section-background: #f0f0f0;
+}
+
+/* golabl style */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'work sans', sans-serif;
+    margin: 0;
+}
+
+.Containr {
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* end glople style */
+/* start header */
+#logo {
+    width: 50px;
+    height: 50px;
+}
+
+header {
+    padding: 15px;
+}
+
+header .Containr {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.link {
+    position: relative;
+}
+
+header .link ul {
+    list-style: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    padding: 0;
+    display: none;
+    margin: 0px;
+    z-index: 1;
+
+}
+
+header .link:hover ul {
+    display: block;
+}
+
+header ul a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: 0.3s;
+
+}
+
+header ul a:hover {
+    padding-left: 20px;
+}
+
+header .link i {
+    font-size: 25px;
+}
+
+header .link ul li:not(:last-child) a {
+    border-bottom: 1px solid #ddd;
+}
+
+#landeing {
+    background-image: url(../Images/landeing.jpg);
+    background-size: cover;
+    height: calc(100vh - 60px);
+    position: relative;
+
+}
+
+
+#landeing .intro {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 300px;
+
+}
+
+#landeing h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--main-color);
+    margin: 0;
+}
+
+#landeing p {
+    font-size: 20px;
+}
+
+
+/* end header */
