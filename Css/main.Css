@@ -29,6 +29,30 @@ body {
 }
 
 /* end glople style */
+/* media query */
+@media (min-width : 760px) {
+    .Containr {
+        width: 750px;
+    }
+
+}
+
+@media (min-width : 990px) {
+    .Containr {
+        width: 970px;
+    }
+
+}
+
+/* large */
+@media (min-width : 1200px) {
+    .Containr {
+        width: 1150px;
+    }
+
+}
+
+
 /* start header */
 #logo {
     width: 50px;
@@ -119,3 +143,44 @@ header .link ul li:not(:last-child) a {
 
 
 /* end header */
+/* graid - templatev-colums : repeat(3,1fr); أعمد متساوية ثلاثة                 */
+
+/* start futsures */
+#futsures {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#futsures .Containr {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* ليتلائم مع حجم الشاشة العناصر */
+    grid-gap: 20px;
+
+}
+
+#futsures .feat {
+
+    text-align: center;
+    padding: 20px;
+}
+
+#futsures .feat i {
+    font-size: 40px;
+    color: var(--main-color);
+}
+
+#futsures .feat h3 {
+    font-weight: 800;
+
+}
+
+#futsures .feat p {
+    color: var(--secandary-color);
+}
+
+/* end futsures */
+
+
+
+
